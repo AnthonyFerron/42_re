@@ -88,7 +88,7 @@ int main(void) {
     my_printf("%s\n", "Hello World");
     my_printf("%u\n", 2997924580000000005);
     int a = 5;
-    int *b = &b;
+    int *b = &a;
     my_printf("Example: %d %s %d\n", 42, "hello", 99);
     return(0);
 }
