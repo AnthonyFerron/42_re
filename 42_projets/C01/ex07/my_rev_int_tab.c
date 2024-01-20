@@ -20,8 +20,9 @@ void my_rev_int_tab(int *tab, int size)
     }
 }
 
-int main(void)
-{
-    int tab[6] = {1, 2, 3, 4, 5};
-    my_rev_int_tab(tab, 0);
-}
+
+// int main(void)
+// {
+//     int tab[6] = {1, 2, 3, 4, 5};
+//     my_rev_int_tab(tab, 0);
+// }

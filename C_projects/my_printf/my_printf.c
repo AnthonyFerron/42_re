@@ -1,56 +1,4 @@
-#include <unistd.h>
-#include <stdarg.h>
-#include <stdlib.h>
-
-void my_putchar(char c) {
-    write(1, &c, 1);
-    return;
-}
-
-void my_putstr(char *str) {
-    int i = 0;
-    while(str[i]) {
-        my_putchar(str[i]);
-        i++;
-    }
-    return;
-}
-
-void my_putnbr(long long int nbr) {
-    long long int i = 0;
-    if(nbr == 0) {
-        my_putchar('0');
-        return;
-    }
-    if(nbr < 0) {
-        my_putchar('-');
-        nbr = -nbr;
-    }
-    if(nbr > 0) {
-        i = nbr % 10;
-        nbr = nbr / 10;
-        if(nbr > 0)
-            my_putnbr(nbr);
-        my_putchar('0' + i);
-    }
-    return;
-}
-
-void my_put_unsigned_nbr(unsigned long long int nbr) {
-    unsigned long long int i = 0;
-    if(nbr == 0) {
-        my_putchar('0');
-        return;
-    }
-    if(nbr > 0) {
-        i = nbr % 10;
-        nbr = nbr / 10;
-        if(nbr > 0)
-            my_put_unsigned_nbr(nbr);
-        my_putchar('0' + i);
-    }
-    return;
-}
+#include "../../includes/aferron.h"
 
 void my_printf(const char *format, ...) {
     va_list args;
@@ -71,7 +19,7 @@ void my_printf(const char *format, ...) {
                 case 'u':
                     my_put_unsigned_nbr(va_arg(args, unsigned long long int));
                     break;
-                case 'p':
+                // case 'p':
                     
             }
         } else {
@@ -87,8 +35,8 @@ int main(void) {
     my_printf("%c\n", 'c');
     my_printf("%s\n", "Hello World");
     my_printf("%u\n", 2997924580000000005);
-    int a = 5;
-    int *b = &a;
+    // int a = 5;
+    // int *b = &a;
     my_printf("Example: %d %s %d\n", 42, "hello", 99);
     return(0);
 }

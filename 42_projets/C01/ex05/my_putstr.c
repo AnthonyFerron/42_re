@@ -9,11 +9,11 @@ void my_putstr(char *str)
         my_putchar(str[i]);
         i++;
     }
+    return;
 }
 
-/*
-int main(void)
-{
-    my_putstr("");
-}
-*/
+
+// int main(void)
+// {
+//     my_putstr("");
+// }

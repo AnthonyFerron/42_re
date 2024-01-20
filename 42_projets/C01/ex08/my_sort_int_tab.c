@@ -29,8 +29,9 @@ void my_sort_int_tab(int *tab, int size)
     }
 }
 
-int main(void)
-{
-    int tab[7] = {4, 2, -5, 4, -7, 1};
-    my_sort_int_tab(tab, 0);
-}
+
+// int main(void)
+// {
+//     int tab[7] = {4, 2, -5, 4, -7, 1};
+//     my_sort_int_tab(tab, 0);
+// }

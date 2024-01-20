@@ -9,6 +9,7 @@
 #include "../42_projets/C00/ex00/my_putchar.c"
 #include "../42_projets/C00/ex04/my_is_negative.c"
 #include "../42_projets/C00/ex07/my_putnbr.c"
+#include "../42_projets/C00/ex07/my_put_unsigned_nbr.c"
 #include "../42_projets/C01/ex02/my_swap.c"
 #include "../42_projets/C01/ex05/my_putstr.c"
 #include "../42_projets/C01/ex06/my_double_strlen.c"
@@ -21,7 +22,7 @@
 #include "../42_projets/C02/ex05/my_str_is_uppercase.c"
 #include "../42_projets/C02/ex06/my_str_is_printable.c"
 #include "../42_projets/C02/ex07/my_strupcase.c"
-#include "../42_projets/C07/ex03/my_strjoin.c"
+// #include "../42_projets/C07/ex03/my_strjoin.c"
 
 
 #include "../C_projects/my_printf/my_printf.c"

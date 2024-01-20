@@ -1,6 +1,6 @@
 #include "../../../includes/aferron.h"
 
-int my_strlen(char **tab) {
+int my_double_strlen(char **tab) {
     int i = 0;
     int j = 0;
     int k = 0;

@@ -33,11 +33,13 @@ char *my_join(char **tab, char *link)
     return(str);
 }
 
-int main(void)
-{
-    char *tab[] = {"Hello", "World", "Hello", "HI", ""};
-    char *str = my_join(tab, "_-_-_");
-    my_printf("%s\n", str);
-    free(str);
-    return 0;
-}
+
+
+// int main(void)
+// {
+//     char *tab[] = {"Hello", "World", "Hello", "HI", ""};
+//     char *str = my_join(tab, "_-_-_");
+//     my_printf("%s\n", str);
+//     free(str);
+//     return 0;
+// }

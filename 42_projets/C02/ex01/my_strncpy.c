@@ -18,10 +18,10 @@ char *my_strncpy(char *src, unsigned int n)
 }
 
 
-int main(int argc, char **argv)
-{
-    (void)argc;
-    char *final = my_strncpy(argv[1], 3);
-    my_putstr(final);
-    return(0);
-}
+// int main(int argc, char **argv)
+// {
+//     (void)argc;
+//     char *final = my_strncpy(argv[1], 3);
+//     my_putstr(final);
+//     return(0);
+// }

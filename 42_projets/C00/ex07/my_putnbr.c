@@ -14,6 +14,7 @@ void my_putnbr(int nb)
     }
     if(nb < 10)
         my_putchar(nb + '0');
+    return;
 }
 /*
 int main(int argc, char **argv)

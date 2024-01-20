@@ -18,8 +18,9 @@ void my_print_combn(int n)
     }
 }
 
-int main(int argc, char **argv)
-{
-    (void)argc;
-    my_print_combn(atoi(argv[1]));
-}
+
+// int main(int argc, char **argv)
+// {
+//     (void)argc;
+//     my_print_combn(atoi(argv[1]));
+// }
