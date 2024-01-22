@@ -2,21 +2,26 @@
 
 char *my_strupcase(char *str)
 {
-    int i;
-    i = 0;
-
+    int i = 0;
+    char *tab;
+    tab = malloc((my_strlen(str) + 1) * sizeof(char));
     while(str[i])
     {
-        if(str[i] >= 97 && str[i] <= 122)
-            str[i] = str[i] - 32;
+        if(str[i] >= 'a' && str[i] <= 'z') 
+        {
+            tab[i] = str[i] - 32;
+        }
+        else {
+            tab[i] = str[i];
+        }
         i++;
     }
-    return(str);
+    tab[i] = '\0';
+    return tab;
 }
-/*
-int main(int argc, char **argv)
-{
-    (void)argc;
-    printf("%s", my_strupcase(argv[1]));
-}
-*/
+
+// int main(void)
+// {
+//     printf("%s", my_strupcase("HelloWorld"));
+//     return(0);
+// }

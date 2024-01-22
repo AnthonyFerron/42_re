@@ -19,7 +19,7 @@ void my_printf(const char *format, ...) {
                 case 'u':
                     my_put_unsigned_nbr(va_arg(args, unsigned long long int));
                     break;
-                // case 'p':
+                case 'p':
                     
             }
         } else {
@@ -35,8 +35,10 @@ int main(void) {
     my_printf("%c\n", 'c');
     my_printf("%s\n", "Hello World");
     my_printf("%u\n", 2997924580000000005);
-    // int a = 5;
-    // int *b = &a;
+    int a = 5;
+    int *b = &a;
+    my_printf("%p", b);
+    printf("%p", b);
     my_printf("Example: %d %s %d\n", 42, "hello", 99);
     return(0);
 }
