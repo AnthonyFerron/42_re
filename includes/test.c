@@ -15,8 +15,7 @@ int main(void)
     my_putchar('\n');
     my_putnbr(my_strlen("hello world"));
     my_putchar('\n');
-    int tab[18] = {1, 2, 3, 4, 5};
-    my_putnbr(my_intlen(tab));
+    my_putnbr(my_intlen(1234567891));
     my_putchar('\n');
     my_putstr(my_strcpy("Hello World"));
     my_putchar('\n');
@@ -31,5 +30,7 @@ int main(void)
     my_putnbr(my_str_is_printable("ctracuvhsBIHZJBSDIJNnd .?QL/q, JHIAHSNOQND985623"));
     my_putstr("a\n");
     my_putstr(my_strupcase("HelloWorldaazz"));
+    my_putstr("\n");
+    printf("%s\n", my_itoa(-123456789));
     return(1);
 }

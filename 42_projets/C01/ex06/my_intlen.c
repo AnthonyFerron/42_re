@@ -1,21 +1,25 @@
 #include "../../../includes/aferron.h"
 
-int my_intlen(int *str)
-{
-    int i;
 
-    i = 0;
-    while (str[i])
-    {
+int my_intlen(long long int nbr)
+{
+    int i = 0;
+    if(nbr < 0) {
+        i++;
+        nbr = -nbr;
+    }
+    if(nbr == 0) {
+        return(1);
+    }
+    while(nbr > 0) {
+        nbr = nbr/10;
         i++;
     }
-    return (i);
+    return(i);
 }
 
-/*
-int main(void)
-{
-    int tab[18] = {1, 2, 3, 4, 5};
-    printf("%d",my_intlen(tab));
-}
-*/
+
+// int main(void)
+// {
+//     printf("%d",my_intlen(0));
+// }

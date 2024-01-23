@@ -1,21 +1,11 @@
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
+#include "../../../includes/aferron.h"
 
-int my_strlen(char *str) {
-    int i = 0;
-    while(str[i] != '\0')
-        i++;
-    return(i - 1);
-}
-
-
-char *my_itoa(long long int nbr)
+char *my_itoa(int nbr)
 {
     int i = 0;
-    int j = j;
+    int j = 0;
     char *str;
-    str = malloc(100 * sizeof(char));
+    str = malloc((my_intlen(nbr) + 1) * sizeof(char));
     if(nbr == 0)
     {
         str[i] = '0';
@@ -31,10 +21,9 @@ char *my_itoa(long long int nbr)
     {
         j = nbr % 10;
         nbr = nbr / 10;
-        str[i] = '0' + j;
+        str[i] = j + '0';
         i++;
     }
-    
     int start = 0;
     if(str[0] == '-')
         start = 1;
@@ -48,12 +37,13 @@ char *my_itoa(long long int nbr)
         start++;
         end--;
     }
+    str[i] = '\0';
     return(str);
 }
 
 
 
-int main(void)
-{
-    printf("%s", my_itoa(-123456789));
-}
+// int main(void)
+// {
+//     printf("%s\n", my_itoa(-123456789));
+// }

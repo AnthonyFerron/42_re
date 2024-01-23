@@ -4,12 +4,11 @@ int my_strlen(char *str)
 {
     int i;
     i = 0;
-    while (str[i])
-    {
+    while (str[i] != '\0')
         i++;
-    }
-    return (i);
+    return (i - 1);
 }
+
 
 /*
 int main(int argc, char **argv)
