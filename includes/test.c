@@ -31,6 +31,13 @@ int main(void)
     my_putstr("a\n");
     my_putstr(my_strupcase("HelloWorldaazz"));
     my_putstr("\n");
-    printf("%s\n", my_itoa(-123456789));
+    my_putstr(my_itoa(-123456789));
+    my_putstr("\n");
+    my_putnbr(my_atoi("123456789"));
+    my_putstr("\n");
+    int a = 42;
+    int *ptr = &a;
+    my_putstr(my_print_pointeur(ptr));
+
     return(1);
 }

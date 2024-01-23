@@ -1,8 +1,27 @@
 reste a faire : 
+i
+o
+u
+x
+X 
+e
+E 
+f 
+F 
+g
+G 
+a
+A 
+n
+Z
+
++ spécificateurs
 
 
 fait : 
 c 
 C 
-s 
+s
+S
 d 
+p
