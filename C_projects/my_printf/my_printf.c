@@ -1,5 +1,7 @@
 #include "../../includes/aferron.h"
 
+char* my_print_pointeur(int *ptr);
+
 void my_printf(const char *format, ...) {
     va_list args;
     va_start(args, format);
@@ -32,15 +34,15 @@ void my_printf(const char *format, ...) {
     va_end(args);
 }
 
-int main(void) {
-    my_printf("%d\n", -123456789);
-    my_printf("%c\n", 'c');
-    my_printf("%s\n", "Hello World");
-    my_printf("%u\n", 2997924580000000005);
-    int a = 5;
-    int *b = &a;
-    my_printf("%p\n", b);
-    my_printf("Example: %d %s %d\n", 42, "hello", 99);
-    my_printf("HelloWorld");
-    return(0);
-}
+// int main(void) {
+//     my_printf("%d\n", -123456789);
+//     my_printf("%c\n", 'c');
+//     my_printf("%s\n", "Hello World");
+//     my_printf("%u\n", 2997924580000000005);
+//     int a = 5;
+//     int *b = &a;
+//     my_printf("%p\n", b);
+//     my_printf("Example: %d %s %d\n", 42, "hello", 99);
+//     my_printf("HelloWorld");
+//     return(0);
+// }

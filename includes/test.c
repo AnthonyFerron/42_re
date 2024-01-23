@@ -35,9 +35,16 @@ int main(void)
     my_putstr("\n");
     my_putnbr(my_atoi("123456789"));
     my_putstr("\n");
+    my_printf("%d", -42);
+    my_putstr("\n");
+    my_printf("%c", 'a');
+    my_putstr("\n");
+    my_printf("%s", "HelloWorld");
+    my_putstr("\n");
+    my_printf("%u", 42);
+    my_putstr("\n");
     int a = 42;
     int *ptr = &a;
-    my_putstr(my_print_pointeur(ptr));
-
+    my_printf("%p", ptr);
     return(1);
 }

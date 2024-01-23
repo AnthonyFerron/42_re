@@ -28,7 +28,7 @@
 // #include "../42_projets/C07/ex03/my_strjoin.c"
 
 
-// #include "../C_projects/my_printf/my_printf.c"
+#include "../C_projects/my_printf/my_printf.c"
 #include "../C_projects/my_printf/my_print_pointeur.c"
 
 
