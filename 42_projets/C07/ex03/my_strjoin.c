@@ -1,14 +1,13 @@
 #include "../../../includes/aferron.h"
 
-char *my_join(char **tab, char *link)
+char *my_strjoin(char **tab, char *link)
 {
     int i = 0;
     int j = 0;
     int k = 0;
     int lenght = my_strlen(link) + my_double_strlen(tab);
     char *str;
-    str = malloc((my_strlen(tab, link) + 1) * sizeof(char));
-    printf("%d", my_strlen(tab, link));
+    str = malloc((lenght + 1) * sizeof(char));
     while(tab[i][0] != '\0')
     {
         while(tab[i][j] != '\0')

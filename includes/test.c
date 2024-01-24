@@ -45,6 +45,11 @@ int main(void)
     my_putstr("\n");
     int a = 42;
     int *ptr = &a;
-    my_printf("%p", ptr);
+    my_printf("%p\n", ptr);
+
+    char *tab[] = {"Hello", "World", "Hello", "HI", ""};
+    my_printf("%s\n", my_strjoin(tab, "_-_-_"));
+    my_putstr("\n");
+    my_printf("%s", my_strcapitalize("hello biatch"));
     return(1);
 }

@@ -23,9 +23,11 @@
 #include "../42_projets/C02/ex05/my_str_is_uppercase.c"
 #include "../42_projets/C02/ex06/my_str_is_printable.c"
 #include "../42_projets/C02/ex07/my_strupcase.c"
+#include "../42_projets/C02/ex08/my_strlowercase.c"
+#include "../42_projets/C02/ex09/my_strcapitalize.c"
 #include "../42_projets/C04/ex03/my_itoa.c"
 #include "../42_projets/C04/ex03/my_atoi.c"
-// #include "../42_projets/C07/ex03/my_strjoin.c"
+#include "../42_projets/C07/ex03/my_strjoin.c"
 
 
 #include "../C_projects/my_printf/my_printf.c"
