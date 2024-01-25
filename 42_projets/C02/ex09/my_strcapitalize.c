@@ -14,8 +14,6 @@ char *my_strcapitalize(char *str)
                     string[i] = str[i] - 32;
                 else
                     string[i] = str[i];
-                
-                
             }
             else
                 string[i] = str[i];
